@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Montserrat&family=Poppins&family=Ubuntu:wght@700&family=Unbounded&family=Zen+Dots&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPPO</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./assets/script/script.js"></script>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .hid{
+            opacity: 0;
+            transition: all 1s;
+            filter: blur(5px);
+            /* transition-delay: 200ms; */
+            /* transform: translateX(-100%); */
+        }
+        .sho{
+            opacity: 1;
+            transform: translateX(0);
+            transform: translateY(0);
+            filter:blur(0);
+        }
+        @media(prefers-reduced-motion){
+            .hid{
+                transition: none;
+            }
+        }
+	#ff4{
+	    background:url('./assets/img/f4.jpg'); 
+        background-size: contain;
+	}
+    #f1{
+        background: url('./assets/img/bg2.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+	
+    </style>
+</head>
+<body>
+    <div class="sticky top-0 bg-white z-10 mb-1"> 
+    <nav class="flex items-center justify-around py-2 w-auto mx-4">
+        <div class="w-24"> <a  href="#" class="flex "><img src="./assets/img/logo.png" alt="" class=""></a></div>
+        <div class="flex space-x-4 font-semibold text-sm">
+            <a href="" class="text-gray-400  hover:text-black hover:underline underline-offset-8 transition-all ">SmartPhones</a>
+            <a href="" class="text-gray-400  hover:text-black hover:underline underline-offset-8 transition-all ">Tablets</a>
+            <a href="" class="text-gray-400  hover:text-black hover:underline underline-offset-8 transition-all ">Audio</a>
+            <a href="" class="text-gray-400  hover:text-black hover:underline underline-offset-8 transition-all ">Wearables</a>
+            <a href="" class="text-gray-400  hover:text-black hover:underline underline-offset-8 transition-all ">Accesories</a>
+            <a href="" class="text-gray-400  hover:text-black hover:underline underline-offset-8 transition-all ">About OPPO</a>
+        </div>
+        <div class="flex space-x-4">
+            <a href="" class="text-sm text-gray-400  font-mono hover:text-black">Store</a>
+            <a href="" class="text-sm text-gray-400  font-mono hover:text-black">Support</a>
+            <a href="" class="text-sm text-gray-400  font-mono hover:text-black">Community</a>
+        </div>
+        <div class="flex items-center">
+        <input type="text" placeholder="Search OPPO.com" class="text-xs text-gray-300 bg-gray-100 px-4 py-3 w-38 rounded-3xl mx-2">
+        <span class="material-symbols-outlined cursor-pointer hover:bg-gray-50 p-2 rounded-3xl ">account_circle</span>
+        <span class="material-symbols-outlined cursor-pointer hover:bg-gray-50 p-2 rounded-3xl">local_mall</span>
+        </div>
+    </nav>
+    <hr><hr>
+    <nav class="flex my-4 items-center text-gray-400 font-sans justify-between mx-16">
+        <div class="">
+            <a href="" class="hover:text-black text-lg">Enco Buds</a>
+        </div>
+        <div class="">
+            <button class="px-4 py-2 hover:text-black hover:bg-gray-50 rounded-3xl">Overview</button>
+            <button class=" px-4 py-2 hover:text-black hover:bg-gray-50 rounded-3xl">Specs</button>
+            <button class=" px-4 py-2 text-black bg-[#2cff73] font-semibold rounded-3xl">Buy Now</button>
+        </div>
+    </nav>
+    <hr>
+    </div>
+    <div class=""><img src="./assets/img/bg1.jpg" alt="">
+        <div class="absolute top-96 mt-24 right-11 hid translate-x-[-100%] delay-200">
+            <div class="text-7xl font-medium mb-3">OPPO Enco Buds</div>
+            <div class="text-5xl mb-3">The Best in Class </div>
+            <div class="text-5xl"> Wireless Earbuds</div>
+        </div>
+    </div>
+    <div class="flex my-24 mx-20 space-x-4 ">
+        <a href="#f1" class="f1 block bg-[#F2F2F2] rounded-xl pt-5 pl-10 space-y-8 hid translate-x-[-100%] delay-200">
+            <div class="text-xl font-semibold">24 h Battery Life</div>
+            <div class="flex">
+                <span class="text-5xl font-semibold text-[color:#FFB31A] w-28">24 hours</span>
+                <img src="./assets/img/f1.png" alt="" class="h-36">
+            </div>
+        </a>
+        <a href="#f2" class="f2 block bg-[#F2F2F2] rounded-xl pl-7 pr-6 pt-5 pb-4 hid translate-x-[-100%] delay-[400]"> 
+            <div class="text-xl font-semibold w-60">Intelligent Call Noise Reduction</div>
+            <img src="./assets/img/f2.png" alt="" class="h-32">
+        </a>
+        <a href="#f3" class="f3 bg-[#F2F2F2] rounded-xl flex flex-col items-center pl-7 pr-3 pt-5 hid translate-x-[-100%] delay-[600]">
+            <div class="text-xl font-semibold w-36 mb-2">Open-Up Auto Connection</div>
+            <img src="./assets/img/f3.png" alt="" class="w-24">
+        </a>
+        <a href="#f4" class="f4 bg-[#F2F2F2] rounded-xl pt-5 pl-7 pr-4 flex flex-col hid translate-x-[-100%] delay-[800]">
+            <div class="text-xl font-semibold w-32 z-[1]">Low-Latency Game Mode</div>
+            <!-- <img src="./assets/img/f4.png" alt="" class="w-32 relative -top-12 right-1 "> -->
+            <div id="ff4" class=" font-semibold text-5xl text-white py-12 ">80ms</div>
+        </a>
+    </div>
+    <!-- <div id="f1" class="h-[914px] max-h-[914px] bg-gray-500 bg-[url('/assets/img/bg2.jpg')] bg-contain bg-repeat-y">
+    </div> -->
+    <div id="f1" class=" text-center">
+        <div class="text-5xl pt-32 pb-4 translate-y-[100%] delay-200 hid">24 Hours Single Charge Playtime </div>
+        <div class="text-4xl translate-y-[100%] delay-200 hid">Battery Beast with 24 Hours Music On</div>
+        <div class="pt-6 translate-y-[100%] delay-200 hid">Enjoy your OPPO Enco Buds for 6 hours non-stop, then simply put them back into their charging case to do it</div>
+        <div class="pb-40 translate-y-[100%] delay-200 hid">all again. Just 15 minutes gives you a fresh hour of play time.</div>
+        <div class="flex m-auto w-fit space-x-16 mt-96 pl-20 pb-24 ">
+            <div class="translate-x-[-100%] delay-200 hid"><div class="text-4xl font-semibold text-left ">6-Hour</div><div>Single-charge music play time</div></div>
+            <div class="translate-x-[-100%] delay-200 hid"><div class="text-4xl font-semibold text-left ">24-Hour</div><div>Longest music play time with charging case</div></div>
+        </div>
+    </div>
+    <div class="flex">
+        <img src="./assets/img/bg3.png" alt="" class="w-[650px] pt-36">
+        <div class="ml-12">
+            <div class="text-6xl pt-64 pb-6 translate-x-[-100%] delay-200 hid">Bass-Driven HD Sound</div>
+            <div class="text-4xl font-semibold w-[500px] pb-8 translate-x-[-100%] delay-200 hid">Experience Concert-like Great Bass</div>
+            <div class="text-xl w-[550px] translate-x-[-100%] delay-200 hid">Enjoy the highest highs and the deepest bass with an 8 mm dynamic driver designed to channel the latest AAC audio coding so you hear your music at its fullest.</div>
+        </div>
+    </div>
+    <div id="f2">
+        <img src="./assets/img/bg4.jpg" alt="">
+        <div class="absolute top-[3530px] left-20 text-white">
+            <div class="text-6xl mb-3 translate-x-[100%] delay-200 hid">Intelligent Call </div>
+            <div class="text-6xl mb-5 translate-x-[100%] delay-200 hid"> Noise Cancellation</div>
+            <div class="text-5xl mb-7 font-semibold translate-x-[100%] delay-200 hid">Your Calls, Crystal Clear</div>
+            <div class="text-2xl mb-5 w-[560px] translate-x-[100%] delay-200 hid">With DNN model-based smart algorithm, your voice will be extracted precisely from surrounding noise during calls. You'll be able to appreciate your favorite people's voices.</div>
+        </div>
+    </div>
+    <div id="f4" class="flex py-40 bg-[#F2F2F2]">
+        <img src="./assets/img/bg5.png" alt="" class="w-[590px] translate-x-[-100%] delay-500 hid">
+        <div class="ml-72 space-y-3">
+            <div class="text-6xl translate-y-[100%] delay-200 hid">Low-Latency</div>
+            <div class="text-6xl translate-y-[100%] delay-200 hid">Game Mode</div>
+            <div class="text-4xl font-semibold pt-4 translate-y-[100%] delay-200 hid">Click into High Gear</div>
+            <div class="text-xl text-gray-700 w-96 pt-4 translate-y-[100%] delay-200 hid">Tap three times on your OPPO Enco Buds to activate 80 ms³ super-low latency Game Mode for a complete audio-visual sync-up that pulls you right into the game.</div>
+        </div>
+        <img src="./assets/img/bl.png" alt="" class="w-[230px] object-contain absolute top-[4680px] left-52 translate-x-[-100%] delay-500 hid"><img src="./assets/img/br.png" alt="" class="w-[180px] object-contain absolute top-[4600px] left-[46%] translate-x-[-100%] delay-800 hid">
+    </div>
+    <div id="f3" class="flex items-center justify-around py-40 mx-12">
+        <div class="">
+            <div class="text-6xl mb-6 translate-y-[100%] delay-200 hid">Open-Up Auto Connect⁵</div>
+            <div class="text-4xl font-semibold mb-8 translate-y-[100%] delay-200 hid">Once Paired, Always Connected</div>
+            <div class="text-xl text-gray-800 w-[530px] translate-y-[100%] delay-200 hid">Instead of fiddling with ear buds you have to activate, OPPO Enco Buds can automatically turn themselves on by simply opening the charging case.</div>
+        </div>
+        <img src="./assets/img/bg6.png" alt="" class="w-[500px] ">
+    </div>
+    <div>
+        <img src="./assets/img/bg7.jpg" alt="">
+        <div class="absolute top-[6390px] left-20 text-white">
+            <div class="text-6xl mb-2 translate-y-[100%] delay-200 hid">IP54 Dust and</div>
+            <div class="text-6xl mb-6 translate-y-[100%] delay-200 hid">Water Resistance⁶</div>
+            <div class="text-4xl font-semibold mb-8 translate-y-[100%] delay-200 hid">Proof of Endurance</div>
+            <div class="text-xl w-[430px] translate-y-[100%] delay-200 hid">When you're going all out, you need audio equipment that lets you break a sweat without worrying about damage. That's why OPPO Enco Buds are IP54 waterproof-rated to stand up to mild rain and tough workouts⁶.</div>
+        </div>
+    </div>
+    <div>
+        <img src="./assets/img/manual.jpg" alt="">
+    </div>
+    <div class="w-[90%] m-auto text-xl text-gray-400 leading-8 font-sans py-32">
+        <div class="w-fit">Notes:</div>
+        <ol class="list-decimal list-inside ">
+            <li>Endurance test data is based on OPPO laboratory tests conducted at 50% volume. Charging times are based on measurements taken at 25 degrees Celsius in OPPO's laboratories using the standard OPPO charger. Specific endurance and charging performance will vary based on actual conditions.</li>
+            <li>Reduced transmission delay is calculated based on comparisons with conventional Bluetooth® transmission technology.</li>
+            <li>This 80ms latency refers to the latency data at the earphone side, and the overall latency experience depends on both device and earphones. This may vary between different devices.</li>
+            <li>OPPO Enco Buds are compatible with Bluetooth® 5.2 or lower enabled devices running both iOS and Android.</li>
+            <li>OPPO Enco Buds are compatible with Bluetooth® 5.2 or lower enabled devices running both iOS and Android.</li>
+            <li>The earphones are IP54 dust and water resistant, but the charging case is not. Avoid using the earphones and charging case during strenuous exercise to prevent damage from perspiration.</li>
+            <li>OPPO ColorOS 11.0+ users with OPPO Wireless Devices version 3.7.72+ can go to OPPO Enco Buds > Earbud Functions on the Bluetooth® interface of their phone to customize the earphones. Android 6.0+ users can download and install the HeyMelody app from Google Play Store app to customize the earphones. The app is currently not available for iOS.</li>
+            <li>Product images are provided for reference only. Some specification and details may vary based on changes in suppliers or other extenuating circumstances. Please refer to the actual product in all cases.</li>
+        </ol>
+    </div>
+    
+    <footer class="bg-black px-10">
+        <div class="font-sans grid grid-cols-6 justify-items-center font-semibold text-[color:rgba(255,255,255,0.55)] py-10">
+        <div class="inline-grid grid-cols-1 gap-1 ">
+            <div class="text-white mb-2 text-lg">Smartphones</div>
+            <a href="" class="hover:text-white">OPPO Find N2 Flip</a>
+            <a href="" class="hover:text-white">OPPO Reno8 T 5G</a>
+            <a href="" class="hover:text-white">OPPO Reno8 Pro 5G</a>
+            <a href="" class="hover:text-white">OPPO Reno8 5G</a>
+            <a href="" class="hover:text-white">OPPO F23 5G</a>
+            <a href="" class="hover:text-white">OPPO F21s Pro 5G</a>
+            <a href="" class="hover:text-white">OPPO F21s Pro</a>
+            <a href="" class="hover:text-white">See All Smartphones</a>
+          </div>
+          <div class="inline-grid grid-cols-1 gap-1">
+            <div class="text-white mb-2 text-lg">IoT Products</div>
+            <a href="" class="hover:text-white">OPPO Pad Air</a>
+            <a href="" class="hover:text-white">OPPO Enco Air3</a>
+            <a href="" class="hover:text-white">OPPO Enco Buds2</a>
+            <a href="" class="hover:text-white">OPPO Enco X2</a>
+            <a href="" class="hover:text-white">OPPO Enco Air2 Pro</a>
+            <a href="" class="hover:text-white">OPPO Enco Air2</a>
+            <a href="" class="hover:text-white">OPPO Watch Free</a>
+            <a href="" class="hover:text-white">OPPO Band Style</a>
+          </div>
+          <div class="inline-grid grid-cols-1 gap-1 auto-rows-min">
+            <div class="text-white mb-2 text-lg">Special Offers</div>
+            <a href="" class="hover:text-white">Education Discount</a>
+            <a href="" class="hover:text-white">Strike a Bargain</a>
+            
+          </div>
+          <div class="inline-grid grid-cols-1 gap-1">
+            <div class="text-white mb-2 text-lg">Support</div>
+            <a href="" class="hover:text-white">Contact Us</a>
+            <a href="" class="hover:text-white">Service Center</a>
+            <a href="" class="hover:text-white">OPPO Update</a>
+            <a href="" class="hover:text-white">Terms and Conditions</a>
+            <a href="" class="hover:text-white">E-waste Management</a>
+            <a href="" class="hover:text-white">Security Response Center</a>
+            <a href="" class="hover:text-white">Warranty Policy</a>
+            <a href="" class="hover:text-white">Investor</a>
+          </div>
+          <div class="inline-grid grid-cols-1 gap-1 auto-rows-min">
+              <div class="text-white mb-2 text-lg">About OPPO</div>
+              <a href="" class="hover:text-white">Our Story</a>
+              <a href="" class="hover:text-white">Technology</a>
+              <a href="" class="hover:text-white">Newsroom</a>
+              <a href="" class="hover:text-white">Campaign</a>
+              <a href="" class="hover:text-white">Career</a>
+              <a href="" class="hover:text-white">ColorOS</a>
+              <a href="" class="hover:text-white">Store Locator</a>
+          </div>   
+          <div class="inline-grid grid-cols-1 gap-1 auto-rows-min">
+          <div class="text-white mb-2 text-lg">OPPO Community</div>
+          <a href="" class="hover:text-white">OPPO Community</a>
+          </div>
+        </div>
+        <hr class="w-[95%] m-auto border-[color:rgba(255,255,255,0.55)]">
+        <div class="flex py-8 px-8 justify-between items-center hover:text-white">
+            <a href="" class="flex items-center space-x-4">
+                <button class="border border-[color:rgba(255,255,255,0.55)] p-1 rounded-full"><img src="./assets/img/robot.png" alt="" class="h-8" ></button>
+                <span class="text-white text-xl h-fit">Get Support From OPPO</span>
+            </a>
+            <div class="space-x-4 flex items-center">
+                <div class="space-x-2">               
+                <a href=""><i class="fab fa-facebook text-[25px] text-[color:rgba(255,255,255,0.55)] bg-black hover:text-white"></i></a>
+                <a href=""><i class="fab fa-instagram text-[25px] text-[color:rgba(255,255,255,0.55)] bg-black hover:text-white"></i></a>
+                <a href=""><i class="fab fa-twitter text-[25px] text-[color:rgba(255,255,255,0.55)] bg-black hover:text-white"></i></a>
+                <a href="" class=""><i class="fab fa-youtube text-[25px] text-[color:rgba(255,255,255,0.55)] bg-black hover:text-white"></i></a>
+                </div>
+                <a href="" class="text-white underline underline-offset-1">India (English)</a>
+            </div>
+        </div>
+        <hr class="w-[95%] m-auto border-[color:rgba(255,255,255,0.55)]">
+        <div class="flex text-[color:rgba(255,255,255,0.55)] text-xs font-semibold px-8 py-10 items-center justify-between">
+            <div class="space-x-8">
+
+            
+            <a href="" class="hover:text-white">Privacy</a>
+            <a href="" class="hover:text-white">Terms of Use</a>
+            <a href="" class="hover:text-white">Terms of Sales</a>
+            <a href="" class="hover:text-white">Cookies</a>
+            <a href="" class="hover:text-white">Legal & Compliance</a>
+            <a>Copyright © 2004-2023 OPPO. All rights reserved.</a>
+           </div>
+            <a href="#" class="text-base hover:text-white">Back To Top</a>
+        </div>
+    </footer>
+</body>
+</html>
